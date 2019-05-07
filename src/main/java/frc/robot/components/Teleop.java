@@ -14,7 +14,8 @@ public class Teleop{
     }
 
     public void periodic(final Robot robot){
-        robot.getDrivebase().drive(-driver.getRawAxis(Titan.Xbox.Axis.LEFT_Y)/2, driver.getRawAxis(Titan.Xbox.Axis.RIGHT_Y)/2);
+        //robot.getDrivebase().drive(-driver.getRawAxis(Titan.Xbox.Axis.LEFT_Y)/2, driver.getRawAxis(Titan.Xbox.Axis.RIGHT_Y)/2);
+        robot.getDrivebase().drive(driver.getRawAxis(Titan.Xbox.Axis.LEFT_X)*.4 - driver.getRawAxis(Titan.Xbox.Axis.LEFT_Y), driver.getRawAxis(Titan.Xbox.Axis.LEFT_X)*.4+ driver.getRawAxis(Titan.Xbox.Axis.LEFT_Y));
     }
 
     public Titan.Xbox getDriver(){
