@@ -18,7 +18,7 @@ public class Teleop{
         robot.getDrivebase().drive(driver.getRawAxis(Titan.Xbox.Axis.LEFT_Y)*.75, driver.getRawAxis(Titan.Xbox.Axis.RIGHT_Y)*.75);
         
         //Arcade Drive
-        //robot.getDrivebase().drive(driver.getRawAxis(Titan.Xbox.Axis.LEFT_X)*.4 - driver.getRawAxis(Titan.Xbox.Axis.LEFT_Y), driver.getRawAxis(Titan.Xbox.Axis.LEFT_X)*.4+ driver.getRawAxis(Titan.Xbox.Axis.LEFT_Y));
+        //robot.getDrivebase().drive(-driver.getRawAxis(Titan.Xbox.Axis.LEFT_X)*.4 + driver.getRawAxis(Titan.Xbox.Axis.LEFT_Y), driver.getRawAxis(Titan.Xbox.Axis.LEFT_X)*.4+ driver.getRawAxis(Titan.Xbox.Axis.LEFT_Y));
     }
 
     public Titan.Xbox getDriver(){
